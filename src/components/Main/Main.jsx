@@ -65,7 +65,7 @@ function Main() {
   } else if (slides.length > 0) {
     content = (
       <div className="main__content">
-        <h2>¡Últimas noticias en Watika!</h2>
+        <h2 className="main__title">¡Últimas noticias en Watika!</h2>
         <section>
           <div className="main__slider">
             <button className="main__slider-arrow" onClick={prevSlide}>

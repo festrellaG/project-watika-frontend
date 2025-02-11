@@ -117,3 +117,18 @@
 .booking__btn:hover {
   opacity: 0.7;
 }
+
+@media screen and (min-width: 320px) and (max-width: 880px) {
+  .booking__title {
+    font-size: 28px;
+  }
+
+  .booking__text {
+    font-size: 16px;
+  }
+
+  .booking__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
