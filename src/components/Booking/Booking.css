@@ -1,0 +1,119 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+
+.booking__title {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 44px;
+}
+
+.booking__text {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.booking__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  grid-column-gap: 17px;
+  grid-row-gap: 17px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.booking__card {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  width: 282px;
+  /*height: 340px;*/
+  height: 271px;
+  overflow: hidden;
+}
+
+.booking__card:hover {
+  transform: translateY(-5px);
+}
+
+.booking__card-title {
+  padding: 15px;
+  /*padding-top: 80px;*/
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.booking__card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.booking__card-button {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.booking__button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking__button:hover {
+  background: #0056b3;
+}
+
+.description-container {
+  margin-top: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.booking__btn {
+  width: 100%;
+  max-width: 358px;
+  border-radius: 4px;
+  background-color: rgb(212, 185, 185);
+  padding: 15px;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(133, 123, 123);
+}
+
+.booking__btn:hover {
+  opacity: 0.7;
+}
