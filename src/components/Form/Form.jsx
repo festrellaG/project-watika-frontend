@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../Utils/CalendarCustom.css";
 import PopupWithForm from "../PopupWithForm/PopupWithForm";
@@ -63,7 +63,7 @@ function Form() {
     };
 
     fetchEnabledDates();
-  }, []);
+  }, [service.title]);
 
   function handleChangeName(e) {
     setName(e.target.value);
@@ -379,8 +379,8 @@ function Form() {
             <p>Cuenta: 1411206796</p>
             <p>Clabe: 012180014112067961</p>
             <p>Tarjeta: 4152314048597218</p>
-            <p>Concepto: "Ceremonia," "Nombre"</p>
-            <p>Ejemplo: "Ceremonia Ayahuasca, Roberto Juárez" </p>
+            <p>Concepto: &ldquo;Ceremonia,&ldquo; &ldquo;Nombre&ldquo;</p>
+            <p>Ejemplo: &ldquo;Ceremonia Ayahuasca, Roberto Juárez&ldquo; </p>
             <p>Sube el comprobante de pago</p>
           </div>
         </PopupWithForm>
